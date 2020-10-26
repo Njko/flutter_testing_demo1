@@ -20,6 +20,18 @@ void main() {
       expect(counter.value, expectedResult);
     });
 
+    test('Counter value should have a default value', () {
+      //Arrange
+      //1 - Our counter will start at 0
+      final expectedResult = 0;
+
+      //Act
+      //2 - There are no actions in this test
+
+      //Assert
+      expect(counter.value, expectedResult);
+    });
+
     test('Counter value should be incremented twice', () {
       //Arrange
       final expectedResult = 2;
@@ -34,10 +46,10 @@ void main() {
       expect(counter.value, expectedResult);
     });
 
-    test('Counter value should be incremented ten times', () {
+    test('Counter value should be incremented a hundred times', () {
       //Arrange
-      final expectedResult = 10;
-      final numberOfIncrements = 10;
+      final expectedResult = 100;
+      final numberOfIncrements = 100;
 
       //Act
       for (var i = 0; i < numberOfIncrements; i++) {

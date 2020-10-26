@@ -1,9 +1,11 @@
 class Counter {
-  var value = 0;
+  var _value = 0;
 
-  void increment() => value++;
+  int get value => _value;
+
+  void increment() => _value++;
 
   void decrement() {
-    value = value - 1;
+    _value = _value - 1;
   }
 }
